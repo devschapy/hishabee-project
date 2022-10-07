@@ -65,10 +65,9 @@
 
                 <div class="container-fluid bg-gray py-3">
                     <div class="row">
-
                         <div class="col-8">
-                            <div class="product-area px-3">
-                                <div class="input-group py-3">
+                            <div class="product-area">
+                                <div class="input-group py-3 px-3">
                                     <div class="w-100 position-relative">
                                         <input class="form-control py-3 pl-5 border font-md" type="search"
                                             placeholder="অনুসন্ধান করুন">
@@ -76,63 +75,105 @@
                                     </div>
                                 </div>
 
+                                <!-- Grid Table area  -->
                                 <div class="grid-container">
-                                    <div class="grid-items">
+                                    <div class="grid-items bg-gray py-1 border border-top-0">
                                         <span class="checkbox"><input type="checkbox" /></span>
-                                        <span class="product"># পণ্য (৩)</span>
-                                        <span class="stok">স্টক</span>
-                                        <span class="by">ক্রয় মূল্য</span>
-                                        <span class="sell">বিক্রয় মূল্য</span>
+                                        <span class="product font-bold font-lg"># পণ্য (৩)</span>
+                                        <span class="stok font-bold font-lg">স্টক</span>
+                                        <span class="by font-bold font-lg">ক্রয় মূল্য</span>
+                                        <span class="sell font-bold font-lg">বিক্রয় মূল্য</span>
                                     </div>
-                                    <div class="grid-items">
+
+                                    <div class="grid-items ">
                                         <span class="checkbox"><input type="checkbox" id="id1"></span>
-                                        <span class="product">
+                                        <label for="id1" class="product">
                                             <div class="d-flex">
                                                 <img src="./assets/img/rise.png" alt="">
                                                 <div class="pl-2">
-                                                    <span class=" td-text1">রূপচাঁদা সয়াবিন তেল<span><br />
-                                                            <span class=" td-text">মুদি পণ্য</span>
+                                                    <span class="font-lg">রূপচাঁদা সয়াবিন তেল<span><br />
+                                                            <span class="font-md">মুদি পণ্য</span>
                                                 </div>
                                             </div>
-                                        </span>
-                                        <span class="stok">৯০০</span>
-                                        <span class="by">৳ ৮৯০</span>
-                                        <span class="sell id1-price">৳ ৯০০</span>
+                                        </label>
+                                        <label for="id1" class="stok font-lg">৯০০</label>
+                                        <label for="id1" class="by font-lg">৳ ৮৯০</label>
+                                        <label for="id1" class="sell font-lg id1-price">৳ ৯০০</label>
                                     </div>
 
-                                    <div class="grid-items">
-                                        <span class="checkbox"><input type="checkbox" /></span>
-                                        <span class="unic-product">
+                                    <div class="grid-items border py-1">
+                                        <span class="checkbox product-checkbox mt-2"><input type="checkbox"
+                                                id="id2" /></span>
+                                        <label for="id2" class="unic-product">
                                             <div class="d-flex">
                                                 <img src="./assets/img/milk.png" alt="">
                                                 <div class="pl-2">
-                                                    <span class=" td-text1">রূপচাঁদা সয়াবিন তেল (৩ ধরন)<span><br />
-                                                            <span class=" td-text">মুদি পণ্য</span>
+                                                    <span class="font-lg">রূপচাঁদা সয়াবিন তেল (৩ ধরন)<span><br />
+                                                            <span class="font-md">মুদি পণ্য</span>
                                                 </div>
                                             </div>
-                                        </span>
-                                        <!-- <span class="stok">৯০০</span>
-                                        <span class="by">৳ ৮৯০</span>
-                                        <span class="sell">৳ ৯০০</span> -->
+
+                                            <!-- sub items  -->
+                                            <div class="grid-container mt-3">
+                                                <div class="grid-items">
+                                                    <span class="checkbox"><input type="checkbox" id="id2A" /></span>
+                                                    <label for="id2A" class="product">
+                                                        <div class="d-flex">
+                                                            <img src="./assets/img/oil.png" alt="">
+                                                            <span class="font-md pl-2">৩ লিটার</span>
+                                                        </div>
+                                                    </label>
+                                                    <label for="id2A" class="stok font-lg">২৫০</label>
+                                                    <label for="id2A" class="by font-lg">৳ ৮৯০</label>
+                                                    <label for="id2A" class="sell font-lg">৳ ৯০০</label>
+                                                </div>
+
+                                                <div class="grid-items">
+                                                    <span class="checkbox"><input type="checkbox" id="id2B" /></span>
+                                                    <label for="id2B" class="product">
+                                                        <div class="d-flex">
+                                                            <img src="./assets/img/chili.png" alt="">
+                                                            <span class="font-md pl-2">৩ লিটার</span>
+                                                        </div>
+                                                    </label>
+                                                    <label for="id2B" class="stok font-lg">২৫০</label>
+                                                    <label for="id2B" class="by font-lg">৳ ৮৯০</label>
+                                                    <label for="id2B" class="sell font-lg">৳ ৯০০</label>
+                                                </div>
+
+                                                <div class="grid-items">
+                                                    <span class="checkbox"><input type="checkbox" id="id2C" /></span>
+                                                    <label for="id2C" class="product">
+                                                        <div class="d-flex">
+                                                            <img src="./assets/img/oil3.png" alt="">
+                                                            <span class="font-md pl-2">৩ লিটার</span>
+                                                        </div>
+                                                    </label>
+                                                    <label for="id2C" class="stok font-lg">২৫০</label>
+                                                    <label for="id2C" class="by font-lg">৳ ৮৯০</label>
+                                                    <label for="id2C" class="sell font-lg">৳ ৯০০</label>
+                                                </div>
+                                            </div>
+
+                                        </label>
                                     </div>
 
-                                    <div class="grid-items">
-                                        <span class="checkbox"><input type="checkbox" /></span>
-                                        <span class="product">
+                                    <div class="grid-items pb-2">
+                                        <span class="checkbox"><input type="checkbox" id="id3" /></span>
+                                        <label for="id3" class="product">
                                             <div class="d-flex">
                                                 <img src="./assets/img/chili.png" alt="">
                                                 <div class="pl-2">
-                                                    <span class=" td-text1">রূপচাঁদা সয়াবিন তেল<span><br />
-                                                            <span class=" td-text">মুদি পণ্য</span>
+                                                    <span class="font-lg">রূপচাঁদা সয়াবিন তেল<span><br />
+                                                            <span class="font-md">মুদি পণ্য</span>
                                                 </div>
                                             </div>
-                                        </span>
-                                        <span class="stok">৯০০</span>
-                                        <span class="by">৳ ৮৯০</span>
-                                        <span class="sell">৳ ৯০০</span>
+                                        </label>
+                                        <label for="id3" class="stok font-lg">২৫০</label>
+                                        <label for="id3" class="by font-lg">৳ ৮৯০</label>
+                                        <label for="id3" class="sell font-lg">৳ ৯০০</label>
                                     </div>
-
-                                </div>  
+                                </div>
                             </div>
                         </div>
 

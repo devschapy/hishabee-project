@@ -2,6 +2,9 @@ const checkbox = document.querySelector('#id1')
 const id1Price = document.querySelector('.id1-price')
 const totalPayment = document.querySelector('.total-payment')
 
+const checkbox3 = document.querySelector('#id3')
+console.log(checkbox3);
+
 checkbox.addEventListener('change', (e)=>{
     const prevPrice =totalPayment.innerHTML
     if(e.target.checked){

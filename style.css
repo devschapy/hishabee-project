@@ -55,25 +55,27 @@
 /* grid area  */
 .grid-container {
     display: grid;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 .grid-items {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-content: center;
     align-items: center;
+    
 }
 .checkbox{
     grid-column: 1/2;
     text-align: center;
 }
+.product-checkbox{
+    align-self: start;
+}
 .product{
     grid-column: 2/7;
-    text-align: center;
 }
 .unic-product{
     grid-column: 2/-1;
-    text-align: center;
 }
 
 .stok{

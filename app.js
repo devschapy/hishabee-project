@@ -16,18 +16,4 @@ checkbox.addEventListener('change', (e)=>{
 })
 
 
-checkbox.addEventListener('change', (e)=>{
-    const prevPrice =totalPayment.innerHTML
-    if(e.target.checked){
-        localStorage.setItem('prevPrice', prevPrice)
-        const price = id1Price.innerHTML.slice(1)
-        totalPayment.innerHTML = price
-    }else{
-        const getPrevPrice = localStorage.getItem('prevPrice')
-        totalPayment.innerHTML = getPrevPrice
-        console.log(prevPrice);
-    }
-})
-
-
 

@@ -1,17 +1,25 @@
-.td-text{
+.font-sm{
+    font-size: 10px;
+}
+.font-md{
     font-size: 12px;
 }
-.td-text1{
+.font-lg{
     font-size: 14px;
 }
-.text-sm{
-    font-size: 8px;
+.font-bold{
+    font-weight: bold;
 }
 .bg{
     background-color: antiquewhite;
 }
 .bg-gray{
     background-color: #F5F5F5;
+}
+.search-icon{
+    position: absolute;
+    top: 8px;
+    left: 10px;
 }
 .imge{
     width: 40px;
@@ -27,20 +35,10 @@
     border-radius: 10px; 
     background-color: #fff;
 }
-.fw{
-    font-weight: bold;
-}
-.input {
-    font-size: 10px;
-}
+
 .menu-icon{
     width: 28px;
     height: 20px;
-}
-
-.check-text{
-    font-size: 16px;
-    font-weight: bold;
 }
 .relative{
     position: relative;
@@ -50,13 +48,43 @@
     top: 6px;
     right: 6px;
 }
-.pyment{
-    font-size: 12px;
-}
-.pyment-text{
-    font-size: 14px;
-    font-weight: bold;
-}
 .side-icon{
     width: 34px;
+}
+
+/* grid area  */
+.grid-container {
+    display: grid;
+    row-gap: 20px;
+}
+.grid-items {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.checkbox{
+    grid-column: 1/2;
+    text-align: center;
+}
+.product{
+    grid-column: 2/7;
+    text-align: center;
+}
+.unic-product{
+    grid-column: 2/-1;
+    text-align: center;
+}
+
+.stok{
+    grid-column: 7/9;
+    text-align: center;
+}
+.by{
+    grid-column: 9/11;
+    text-align: center;
+}
+.sell{
+    grid-column: 11/-1;
+    text-align: center;
 }

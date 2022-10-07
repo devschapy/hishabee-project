@@ -1,0 +1,62 @@
+.td-text{
+    font-size: 12px;
+}
+.td-text1{
+    font-size: 14px;
+}
+.text-sm{
+    font-size: 8px;
+}
+.bg{
+    background-color: antiquewhite;
+}
+.bg-gray{
+    background-color: #F5F5F5;
+}
+.imge{
+    width: 40px;
+    height: 40px;
+}
+.header-top{
+    /* border: 0px 0px 1px 0px solid black;
+     */
+     border-bottom: 1px solid rgb(228, 227, 227);
+}
+.product-area{
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px; 
+    background-color: #fff;
+}
+.fw{
+    font-weight: bold;
+}
+.input {
+    font-size: 10px;
+}
+.menu-icon{
+    width: 28px;
+    height: 20px;
+}
+
+.check-text{
+    font-size: 16px;
+    font-weight: bold;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+.pyment{
+    font-size: 12px;
+}
+.pyment-text{
+    font-size: 14px;
+    font-weight: bold;
+}
+.side-icon{
+    width: 34px;
+}

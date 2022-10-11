@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid">
         <div class="wrapper row">
-            <div class="col-2 col-md-3 pt-2 px-4">
+            <aside class="col-2 col-md-3 pt-2 px-4">
                 <img src="./assets/img/business manager noSlogan 1.png" alt="">
 
                 <div class="mt-5 d-flex">
@@ -33,9 +33,9 @@
                     <img class="side-icon" src="./assets/img/Screenshot from 2022-10-07 20-29-28.png" alt="">
                     <span class="ml-2">বিক্রি করুন</span>
                 </div>
-            </div>
+            </aside>
 
-            <div class="col-10 col-md-9 p-0">
+            <main class="col-10 col-md-9 p-0">
                 <header>
                     <div class="d-flex justify-content-between header-top">
                         <div class=" col-6 py-2">
@@ -67,7 +67,7 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="product-area">
-                                <div class="input-group py-3 px-3">
+                                <div class="py-3 px-3">
                                     <div class="w-100 position-relative">
                                         <input class="form-control py-3 pl-5 border font-md" type="search"
                                             placeholder="অনুসন্ধান করুন">
@@ -102,8 +102,9 @@
                                     </div>
 
                                     <div class="grid-items border py-1">
-                                        <span class="checkbox product-checkbox mt-2"><input type="checkbox"
-                                                id="id2" /></span>
+                                        <span class="checkbox product-checkbox mt-2">
+                                            <input type="checkbox" id="id2" />
+                                        </span>
                                         <label for="id2" class="unic-product">
                                             <div class="d-flex">
                                                 <img src="./assets/img/milk.png" alt="">
@@ -171,7 +172,7 @@
                                         </label>
                                         <label for="id3" class="stok font-lg">২৫০</label>
                                         <label for="id3" class="by font-lg">৳ ৮৯০</label>
-                                        <label for="id3" class="sell font-lg">৳ ৯০০</label>
+                                        <label for="id3" class="sell font-lg id1-price">৳ ৯০০</label>
                                     </div>
                                 </div>
                             </div>
@@ -182,23 +183,27 @@
                             <div class="px-3">
                                 <div class="row">
                                     <div class="relative py-2 px-3 rounded border border-1 col-6">
-                                        <img src="./assets/img/money 2.png" alt="">
-                                        <span class="font-md pl-2">নগদ টাকা</span>
-                                        <input class="absolute" type="radio">
+                                        <label for="nagod" name="payment">
+                                            <img src="./assets/img/money 2.png" alt="">
+                                            <span class="font-md pl-2">নগদ টাকা</span>
+                                        </label>
+                                        <input class="absolute" id="nagod" name="payment" type="radio">
                                     </div>
 
                                     <div class="relative py-2 px-2 rounded border border-1 col-6">
-                                        <div>
+                                        <label for="digital">
                                             <img src="./assets/img/cashless-payment 2.png" alt="">
                                             <span class="font-md">ডিজিটাল পেমেন্ট</span>
-                                        </div>
-                                        <input class="absolute" type="radio">
+                                        </label>
+                                        <input class="absolute" id="digital" name="payment" type="radio">
                                     </div>
 
                                     <div class="relative py-2 px-3 rounded border border-1 col-6 mt-3">
-                                        <img src="./assets/img/Group 4622.png" alt="">
-                                        <span class="font-md pl-2">বাকী</span>
-                                        <input class="absolute" type="radio">
+                                        <label for="due">
+                                            <img src="./assets/img/Group 4622.png" alt="">
+                                            <span class="font-md pl-2">বাকী</span>
+                                        </label>
+                                        <input class="absolute" id="due" name="payment" type="radio">
                                     </div>
 
                                     <div class="py-2 px-3 rounded border border-1 text-center col-6 mt-3">
@@ -221,13 +226,10 @@
                             <button class="btn btn-primary w-100">পেমেন্ট কনফার্ম করুন</button>
                         </div>
                     </div>
-
                 </div>
-            </div>
+            </main>
         </div>
     </div>
-
-
 
     <script src="./app.js"></script>
 

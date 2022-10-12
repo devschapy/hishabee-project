@@ -7,7 +7,7 @@ const aside = document.querySelector('#sideMenu');
 const mainArea = document.querySelector('#mainArea');
 const menuBtn = document.querySelector('#menuBtn');
 
-const paymentToggole = document.querySelector('#paymentToggole');4q 
+const paymentToggole = document.querySelector('#paymentToggole');
 const paymentItems = document.querySelectorAll('.pmntHide')
 console.log(typeof aside);
 

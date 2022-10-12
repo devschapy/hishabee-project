@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid">
         <div class="wrapper row">
-            <aside class="col-2 col-md-3 pt-2 px-4">
+            <aside class="col-2 col-md-3 pt-2 px-4 d-none" id="sideMenu">
                 <img src="./assets/img/business manager noSlogan 1.png" alt="">
 
                 <div class="mt-5 d-flex">
@@ -35,12 +35,12 @@
                 </div>
             </aside>
 
-            <main class="col-10 col-md-9 p-0">
+            <main class="w-100 p-0" id="mainArea">
                 <header>
                     <div class="d-flex justify-content-between header-top">
-                        <div class=" col-6 py-2">
-                            <div class="col-9 d-flex p-0">
-                                <img class="menu-icon mt-1 mr-3" src="./assets/img/menu_open.png" alt="">
+                        <div class="col-7 col-md-6 py-2">
+                            <div class="d-flex p-0">
+                                <img id="menuBtn" class="menu-icon mt-1 mr-3" src="./assets/img/menu_open.png" alt="">
                                 <div class="w-100 position-relative">
                                     <input class="form-control pl-5 py-3 border font-md" type="search"
                                         placeholder="অনুসন্ধান করুন">
@@ -48,8 +48,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 d-flex justify-content-end">
-                            <div class="d-flex bg px-2 pt-2">
+                        <div class="col-5 col-md-6 d-flex justify-content-end">
+                            <div class="d-flex bg px-1 px-md-2 pt-2">
                                 <img class="imge" src="./assets/img/Rectangle 2726.png" alt="">
                                 <div>
                                     <h1 class="font-md">এস এম আলীউজ্জামান</h1>
@@ -65,7 +65,7 @@
 
                 <div class="container-fluid bg-gray py-3">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-sm-8">
                             <div class="product-area">
                                 <div class="py-3 px-3">
                                     <div class="w-100 position-relative">
@@ -101,21 +101,26 @@
                                         <label for="id1" class="sell font-lg id1-price">৳ ৯০০</label>
                                     </div>
 
-                                    <div class="grid-items border py-1">
+                                    <!-- Accordion Section  -->
+                                    <div class="accordion grid-items border py-1" id="accordionExample">
                                         <span class="checkbox product-checkbox mt-2">
                                             <input type="checkbox" id="id2" />
                                         </span>
-                                        <label for="id2" class="unic-product">
-                                            <div class="d-flex">
+                                        <div class="accordion-item unic-product">
+                                            <label for="id2" class="d-flex" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
                                                 <img src="./assets/img/milk.png" alt="">
                                                 <div class="pl-2">
                                                     <span class="font-lg">রূপচাঁদা সয়াবিন তেল (৩ ধরন)<span><br />
                                                             <span class="font-md">মুদি পণ্য</span>
                                                 </div>
-                                            </div>
+                                            </label>
 
-                                            <!-- sub items  -->
-                                            <div class="grid-container mt-3">
+
+                                            <div id="collapseOne"
+                                                class="grid-container mt-3 accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="grid-items">
                                                     <span class="checkbox"><input type="checkbox" id="id2A" /></span>
                                                     <label for="id2A" class="product">
@@ -155,9 +160,9 @@
                                                     <label for="id2C" class="sell font-lg">৳ ৯০০</label>
                                                 </div>
                                             </div>
-
-                                        </label>
+                                        </div>
                                     </div>
+                                    <!-- Accordion Section end  -->
 
                                     <div class="grid-items pb-2">
                                         <span class="checkbox"><input type="checkbox" id="id3" /></span>
@@ -178,35 +183,41 @@
                             </div>
                         </div>
 
-                        <div class="col-4 checkout-area">
+                        <div class="col-sm-4 checkout-area">
                             <h1 class="font-lg font-bold">মূল্য পরিশোধ মাধ্যম</h1>
-                            <div class="px-3">
-                                <div class="row">
-                                    <div class="relative py-2 px-3 rounded border border-1 col-6">
-                                        <label for="nagod" name="payment">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="w-100 position-relative py-1 rounded border border-1">
+                                        <label for="nagod">
                                             <img src="./assets/img/money 2.png" alt="">
                                             <span class="font-md pl-2">নগদ টাকা</span>
                                         </label>
-                                        <input class="absolute" id="nagod" name="payment" type="radio">
-                                    </div>
+                                        <input class="radioPosition" id="nagod" name="payment" type="radio">
+                                    </button>
+                                </div>
 
-                                    <div class="relative py-2 px-2 rounded border border-1 col-6">
+                                <div class="col-6">
+                                    <button class="w-100 position-relative rounded border border-1 py-1">
                                         <label for="digital">
                                             <img src="./assets/img/cashless-payment 2.png" alt="">
                                             <span class="font-md">ডিজিটাল পেমেন্ট</span>
                                         </label>
-                                        <input class="absolute" id="digital" name="payment" type="radio">
-                                    </div>
+                                        <input class="radioPosition" id="digital" name="payment" type="radio">
+                                    </button>
+                                </div>
 
-                                    <div class="relative py-2 px-3 rounded border border-1 col-6 mt-3">
-                                        <label for="due">
+                                <div class="col-6 mt-3">
+                                    <button class="w-100 position-relative rounded border border-1 py-1">
+                                        <label for="due" >
                                             <img src="./assets/img/Group 4622.png" alt="">
                                             <span class="font-md pl-2">বাকী</span>
                                         </label>
-                                        <input class="absolute" id="due" name="payment" type="radio">
-                                    </div>
+                                        <input class="radioPosition" id="due" name="payment" type="radio">
+                                    </button>
+                                </div>
 
-                                    <div class="py-2 px-3 rounded border border-1 text-center col-6 mt-3">
+                                <div class="col-6 mt-3" id="paymentToggole">
+                                    <button class="w-100 position-relative rounded border border-1 py-1">
                                         <span class="font-md">আরও দেখুন</span>
                                         <div class="d-flex justify-content-between">
                                             <img src="./assets/img/image 317.png" alt="">
@@ -214,10 +225,64 @@
                                             <img src="./assets/img/image 313.png" alt="">
 
                                         </div>
-                                    </div>
+                                    </button>
                                 </div>
-                                <div class="row mt-3">
-                                    <input class="cashInput w-100 form-control border" type="text">
+
+                                <!-- hidden Payment  -->
+                                <div class="col-6 mt-3 d-none pmntHide" id="pmnt1">
+                                    <button class="w-100 position-relative rounded border border-1 py-1">
+                                        <label for="due" >
+                                            <img src="./assets/img/Group 4622.png" alt="">
+                                            <span class="font-md pl-2">বাকী</span>
+                                        </label>
+                                        <input class="radioPosition" id="due" name="payment" type="radio">
+                                    </button>
+                                </div>
+                                <div class="col-6 mt-3 d-none pmntHide" id="pmnt2">
+                                    <button class="w-100 position-relative rounded border border-1 py-1">
+                                        <label for="due" >
+                                            <img src="./assets/img/Group 4622.png" alt="">
+                                            <span class="font-md pl-2">বাকী</span>
+                                        </label>
+                                        <input class="radioPosition" id="due" name="payment" type="radio">
+                                    </button>
+                                </div>
+                                <div class="col-6 mt-3 d-none pmntHide" id="pmnt3">
+                                    <button class="w-100 position-relative rounded border border-1 py-1">
+                                        <label for="due" >
+                                            <img src="./assets/img/Group 4622.png" alt="">
+                                            <span class="font-md pl-2">বাকী</span>
+                                        </label>
+                                        <input class="radioPosition" id="due" name="payment" type="radio">
+                                    </button>
+                                </div>
+                                <div class="col-6 mt-3 d-none pmntHide" id="seeLess">
+                                    <button class="w-100 h-100 rounded border border-1 py-1">
+                                        See Less
+                                    </button>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            <div class="row">
+                                <div class="px-3 mt-3 w-100">
+                                    <div class="floating-label-group">
+                                        <input type="text" id="cashOutput" class="form-control" autocomplete="off"
+                                            autofocus required />
+                                        <label class="floating-label">ক্যাশ পেয়েছি</label>
+                                    </div>
                                     <p class="mt-2 font-lg font-bold ">বাকী আছেঃ ৳ <span
                                             class="total-payment">২৩,০০০</span>
                                     </p>

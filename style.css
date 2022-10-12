@@ -35,22 +35,46 @@
     border-radius: 10px; 
     background-color: #fff;
 }
-
 .menu-icon{
     width: 28px;
     height: 20px;
+    cursor: pointer;
 }
-.relative{
-    position: relative;
-}
-.absolute{
+.radioPosition{
     position: absolute;
-    top: 6px;
-    right: 6px;
+    right: 3%;
+    top: 8%;
 }
 .side-icon{
     width: 34px;
 }
+
+.floating-label-group {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.floating-label {
+		font-size: 13px;
+		color: #747373;
+		position: absolute;
+		pointer-events: none;
+		top: 9px;
+		left: 12px;
+		transition: all 0.1s ease;
+	}
+
+	input:focus ~ .floating-label,
+	input:not(:focus):valid ~ .floating-label {
+		top: -8px;
+		bottom: 0px;
+		left: 8px;
+		font-size: 11px;
+		opacity: 1;
+		color: #404040;
+		background: white
+	}
 
 /* grid area  */
 .grid-container {

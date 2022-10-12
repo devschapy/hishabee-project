@@ -23,7 +23,7 @@ const toggleCSSclasses = (el, ...cls) => cls.map(cl => {
 
 menuBtn.addEventListener('click', (e)=>{
     toggleCSSclasses(aside, 'd-block')
-    toggleCSSclasses(mainArea, 'col-10', 'col-md-9')
+    toggleCSSclasses(mainArea, 'col-md-9')
 })
 
 paymentToggole.addEventListener('click', (e) => {
@@ -35,24 +35,6 @@ seeLess.addEventListener('click', (e) => {
     toggleCSSclasses(paymentItems, 'd-block')
     toggleCSSclasses(paymentToggole, 'd-none');
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 checkbox.addEventListener('change', (e)=>{
     const prevPrice =totalPayment.innerHTML

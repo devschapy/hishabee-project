@@ -15,23 +15,23 @@
 <body>
     <div class="container-fluid">
         <div class="wrapper row">
-            <aside class="col-1 col-md-3 pt-2 px-4 d-none" id="sideMenu">
-                <img src="./assets/img/business manager noSlogan 1.png" alt="">
+            <aside class="col-md-3 pt-2 px-4 d-none resAside" id="sideMenu">
+                <img class="w-75 w-lg-100" src="./assets/img/business manager noSlogan 1.png" alt="">
 
                 <div class="mt-5 d-flex">
                     <img src="./assets/img/Vector (3).png" alt="">
                     <div class="ml-3">
-                        <span class="font-lg font-bold">মেসার্স রোনাসা স্টীল</span> <br>
-                        <span class="font-md">দোকান নং #২৩, নিউ সুপার মার্কে...</span>
+                        <span class="font-md font-bold sideText">মেসার্স রোনাসা স্টীল</span> <br>
+                        <span class="font-sm sideText">দোকান নং #২৩, নিউ সুপার মার্কে...</span>
                     </div>
                 </div>
                 <div class="my-4">
                     <img src="./assets/img/Vector (4).png" alt="">
-                    <span class="ml-2">হোম</span>
+                    <span class="ml-2 font-sm font-bold sideText">হোম</span>
                 </div>
                 <div>
                     <img class="side-icon" src="./assets/img/Screenshot from 2022-10-07 20-29-28.png" alt="">
-                    <span class="ml-2">বিক্রি করুন</span>
+                    <span class="ml-2 font-sm font-bold sideText">বিক্রি করুন</span>
                 </div>
             </aside>
 
@@ -52,8 +52,8 @@
                             <div class="d-flex bg px-1 px-md-2 pt-2">
                                 <img class="imge" src="./assets/img/Rectangle 2726.png" alt="">
                                 <div>
-                                    <h1 class="font-md">এস এম আলীউজ্জামান</h1>
-                                    <p class="font-sm">এস এম আলীউজ্জামান</p>
+                                    <h1 class="persName font-md">এস এম আলীউজ্জামান</h1>
+                                    <p class="persName font-sm">এস এম আলীউজ্জামান</p>
                                 </div>
                             </div>
                         </div>
@@ -65,6 +65,7 @@
 
                 <div class="container-fluid bg-gray py-3">
                     <div class="row">
+
                         <div class="col-md-8">
                             <div class="product-area">
                                 <div class="py-3 px-3">
@@ -79,10 +80,10 @@
                                 <div class="grid-container">
                                     <div class="grid-items bg-gray py-1 border border-top-0">
                                         <span class="checkbox"><input type="checkbox" /></span>
-                                        <span class="product font-bold font-lg"># পণ্য (৩)</span>
-                                        <span class="stok font-bold font-lg">স্টক</span>
-                                        <span class="by font-bold font-lg">ক্রয় মূল্য</span>
-                                        <span class="sell font-bold font-lg">বিক্রয় মূল্য</span>
+                                        <span class="product font-bold font-lg resPrdctText"># পণ্য (৩)</span>
+                                        <span class="stok font-bold font-lg resPrdctText">স্টক</span>
+                                        <span class="by font-bold font-lg resPrdctText">ক্রয় মূল্য</span>
+                                        <span class="sell font-bold font-lg resPrdctText">বিক্রয় মূল্য</span>
                                     </div>
 
                                     <div class="grid-items ">
@@ -91,14 +92,14 @@
                                             <div class="d-flex">
                                                 <img src="./assets/img/rise.png" alt="">
                                                 <div class="pl-2">
-                                                    <span class="font-lg">রূপচাঁদা সয়াবিন তেল<span><br />
-                                                            <span class="font-md">মুদি পণ্য</span>
+                                                    <span class="font-lg resPrdctText">রূপচাঁদা সয়াবিন তেল<span><br />
+                                                            <span class="font-md resPrdctItmTxt">মুদি পণ্য</span>
                                                 </div>
                                             </div>
                                         </label>
-                                        <label for="id1" class="stok font-lg">৯০০</label>
-                                        <label for="id1" class="by font-lg">৳ ৮৯০</label>
-                                        <label for="id1" class="sell font-lg id1-price">৳ ৯০০</label>
+                                        <label for="id1" class="stok font-lg resPrdctItmTxt">৯০০</label>
+                                        <label for="id1" class="by font-lg resPrdctItmTxt">৳ ৮৯০</label>
+                                        <label for="id1" class="sell font-lg resPrdctItmTxt id1-price">৳ ৯০০</label>
                                     </div>
 
                                     <!-- Accordion Section  -->
@@ -112,8 +113,8 @@
                                                 aria-controls="collapseOne">
                                                 <img src="./assets/img/milk.png" alt="">
                                                 <div class="pl-2">
-                                                    <span class="font-lg">রূপচাঁদা সয়াবিন তেল (৩ ধরন)<span><br />
-                                                            <span class="font-md">মুদি পণ্য</span>
+                                                    <span class="font-lg resPrdctText">রূপচাঁদা সয়াবিন তেল (৩ ধরন)<span><br />
+                                                            <span class="font-md resPrdctItmTxt">মুদি পণ্য</span>
                                                 </div>
                                             </label>
 
@@ -121,17 +122,18 @@
                                             <div id="collapseOne"
                                                 class="grid-container mt-3 accordion-collapse collapse show"
                                                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
                                                 <div class="grid-items">
                                                     <span class="checkbox"><input type="checkbox" id="id2A" /></span>
                                                     <label for="id2A" class="product">
                                                         <div class="d-flex">
                                                             <img src="./assets/img/oil.png" alt="">
-                                                            <span class="font-md pl-2">৩ লিটার</span>
+                                                            <span class="font-md resPrdctText pl-2">৩ লিটার</span>
                                                         </div>
                                                     </label>
-                                                    <label for="id2A" class="stok font-lg">২৫০</label>
-                                                    <label for="id2A" class="by font-lg">৳ ৮৯০</label>
-                                                    <label for="id2A" class="sell font-lg">৳ ৯০০</label>
+                                                    <label for="id2A" class="stok font-lg resPrdctItmTxt">২৫০</label>
+                                                    <label for="id2A" class="by font-lg resPrdctItmTxt">৳ ৮৯০</label>
+                                                    <label for="id2A" class="sell font-lg resPrdctItmTxt">৳ ৯০০</label>
                                                 </div>
 
                                                 <div class="grid-items">
@@ -139,12 +141,12 @@
                                                     <label for="id2B" class="product">
                                                         <div class="d-flex">
                                                             <img src="./assets/img/chili.png" alt="">
-                                                            <span class="font-md pl-2">৩ লিটার</span>
+                                                            <span class="font-md resPrdctText pl-2">৩ লিটার</span>
                                                         </div>
                                                     </label>
-                                                    <label for="id2B" class="stok font-lg">২৫০</label>
-                                                    <label for="id2B" class="by font-lg">৳ ৮৯০</label>
-                                                    <label for="id2B" class="sell font-lg">৳ ৯০০</label>
+                                                    <label for="id2B" class="stok font-lg resPrdctItmTxt">২৫০</label>
+                                                    <label for="id2B" class="by font-lg resPrdctItmTxt">৳ ৮৯০</label>
+                                                    <label for="id2B" class="sell font-lg resPrdctItmTxt">৳ ৯০০</label>
                                                 </div>
 
                                                 <div class="grid-items">
@@ -152,12 +154,12 @@
                                                     <label for="id2C" class="product">
                                                         <div class="d-flex">
                                                             <img src="./assets/img/oil3.png" alt="">
-                                                            <span class="font-md pl-2">৩ লিটার</span>
+                                                            <span class="font-md resPrdctText pl-2">৩ লিটার</span>
                                                         </div>
                                                     </label>
-                                                    <label for="id2C" class="stok font-lg">২৫০</label>
-                                                    <label for="id2C" class="by font-lg">৳ ৮৯০</label>
-                                                    <label for="id2C" class="sell font-lg">৳ ৯০০</label>
+                                                    <label for="id2C" class="stok font-lg resPrdctItmTxt">২৫০</label>
+                                                    <label for="id2C" class="by font-lg resPrdctItmTxt">৳ ৮৯০</label>
+                                                    <label for="id2C" class="sell font-lg resPrdctItmTxt">৳ ৯০০</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -170,29 +172,29 @@
                                             <div class="d-flex">
                                                 <img src="./assets/img/chili.png" alt="">
                                                 <div class="pl-2">
-                                                    <span class="font-lg">রূপচাঁদা সয়াবিন তেল<span><br />
-                                                            <span class="font-md">মুদি পণ্য</span>
+                                                    <span class="font-lg resPrdctText">রূপচাঁদা সয়াবিন তেল<span><br />
+                                                            <span class="font-md resPrdctItmTxt">মুদি পণ্য</span>
                                                 </div>
                                             </div>
                                         </label>
-                                        <label for="id3" class="stok font-lg">২৫০</label>
-                                        <label for="id3" class="by font-lg">৳ ৮৯০</label>
-                                        <label for="id3" class="sell font-lg id1-price">৳ ৯০০</label>
+                                        <label for="id3" class="stok font-lg resPrdctItmTxt">২৫০</label>
+                                        <label for="id3" class="by font-lg resPrdctItmTxt">৳ ৮৯০</label>
+                                        <label for="id3" class="sell font-lg resPrdctItmTxt id1-price">৳ ৯০০</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 mt-3 mt-md-0 checkout-area">
+                        <div class="col-md-4 mt-5 mt-md-0 checkout-area">
                             <h1 class="font-lg font-bold">মূল্য পরিশোধ মাধ্যম</h1>
                             <div class="row">
                                 <div class="col-6">
                                     <div class="w-100 position-relative py-1 px-2 rounded border border-1">
-                                        <label for="nagod">
+                                        <label for="cash">
                                             <img src="./assets/img/money 2.png" alt="">
                                             <span class="font-md pl-2">নগদ টাকা</span>
                                         </label>
-                                        <input class="radioPosition" id="nagod" name="payment" type="radio">
+                                        <input class="radioPosition" id="cash" name="payment" type="radio">
                                     </div>
                                 </div>
 
@@ -200,7 +202,7 @@
                                     <div class="w-100 position-relative rounded border border-1 py-1 px-2">
                                         <label for="digital">
                                             <img src="./assets/img/cashless-payment 2.png" alt="">
-                                            <span class="font-md">ডিজিটাল পেমেন্ট</span>
+                                            <span class="font-sm">ডিজিটাল পেমেন্ট</span>
                                         </label>
                                         <input class="radioPosition" id="digital" name="payment" type="radio">
                                     </div>
@@ -231,29 +233,26 @@
                                 <!-- hidden Payment  -->
                                 <div class="col-6 mt-3 d-none pmntHide" id="pmnt1">
                                     <div class="w-100 position-relative rounded border border-1 py-2 px-2">
-                                        <label for="due" >
+                                        <label for="nagod" >
                                             <img src="./assets/img/image 317.png" alt="">
-                                            <span class="font-md pl-2">বাকী</span>
                                         </label>
-                                        <input class="radioPosition" id="due" name="payment" type="radio">
+                                        <input class="radioPosition" id="nagod" name="payment" type="radio">
                                     </div>
                                 </div>
                                 <div class="col-6 mt-3 d-none pmntHide" id="pmnt2">
                                     <div class="w-100 position-relative rounded border border-1 py-2 px-2">
-                                        <label for="due" >
+                                        <label for="roket" >
                                             <img src="./assets/img/image-removebg-preview 1.png" alt="">
-                                            <span class="font-md pl-2">বাকী</span>
                                         </label>
-                                        <input class="radioPosition" id="due" name="payment" type="radio">
+                                        <input class="radioPosition" id="roket" name="payment" type="radio">
                                     </div>
                                 </div>
                                 <div class="col-6 mt-3 d-none pmntHide" id="pmnt3">
                                     <div class="w-100 position-relative rounded border border-1 py-2 px-2">
-                                        <label for="due" >
+                                        <label for="city" >
                                             <img src="./assets/img/image 313.png" alt="">
-                                            <span class="font-md pl-2">বাকী</span>
                                         </label>
-                                        <input class="radioPosition" id="due" name="payment" type="radio">
+                                        <input class="radioPosition" id="city" name="payment" type="radio">
                                     </div>
                                 </div>
                                 <div class="col-6 mt-3 d-none pmntHide" id="seeLess">
@@ -261,20 +260,6 @@
                                         See Less
                                     </button>
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </div>
                             <div class="row">
                                 <div class="px-3 mt-3 w-100">
@@ -290,6 +275,7 @@
                             </div>
                             <button class="btn btn-primary w-100">পেমেন্ট কনফার্ম করুন</button>
                         </div>
+                        
                     </div>
                 </div>
             </main>

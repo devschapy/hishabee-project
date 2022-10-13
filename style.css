@@ -123,7 +123,7 @@ input:not(:focus):valid ~ .floating-label {
         background-color: rgb(248, 232, 212);
         width: 40%;
         z-index: 10;
-        top: 15%;
+        top: 10%;
         border-radius: 5%;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
             rgba(0, 0, 0, 0.23) 0px 6px 6px;

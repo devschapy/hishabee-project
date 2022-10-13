@@ -121,6 +121,21 @@ input:not(:focus):valid ~ .floating-label {
 
 
 /* --- Media Queries --- */
+@media screen and (max-width: 935px) {
+    .sideShopText {
+        font-size: 8px;
+    }
+    .sideShopTitle {
+        font-size: 6px;
+    }
+    .prdctTxt{
+        font-size: 11px;
+    }
+    .PrdctTitle{
+        font-size: 9px;
+    }
+}
+
 
 @media screen and (max-width: 767px) {
     .resAside {
@@ -128,19 +143,20 @@ input:not(:focus):valid ~ .floating-label {
         background-color: rgb(248, 232, 212);
         width: 40%;
         z-index: 10;
-        top: 10%;
+        top: 16%;
         border-radius: 5%;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
             rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
-    .sideText {
+    .sideShopText {
         font-size: 8px;
     }
 }
 
 @media screen and (max-width: 525px) {
     .resAside {
-        width: 50%;
+        width: 65%;
+        top: 13%;
     }
     .persName {
         font-size: 6px;
@@ -149,6 +165,16 @@ input:not(:focus):valid ~ .floating-label {
         font-size: 10px;
     }
     .resPrdctItmTxt {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 371px) {
+    .prdctTxt{
         font-size: 8px;
+    }
+    .PrdctTitle{
+        font-size: 6px;
     }
 }

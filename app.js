@@ -24,6 +24,7 @@ const toggleCSSclasses = (el, ...cls) => cls.map(cl => {
 menuBtn.addEventListener('click', (e)=>{
     toggleCSSclasses(aside, 'd-block')
     toggleCSSclasses(mainArea, 'col-md-9')
+    toggleCSSclasses(menuBtn, 'menuFocus')
 })
 
 paymentToggole.addEventListener('click', (e) => {

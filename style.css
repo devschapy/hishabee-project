@@ -36,6 +36,11 @@
     height: 20px;
     cursor: pointer;
 }
+.menuFocus{
+    background-color: rgb(247, 206, 157);
+    border-radius: 10%;
+    border-bottom: 1px solid rgb(228, 227, 227);
+}
 .side-icon {
     width: 34px;
 }
